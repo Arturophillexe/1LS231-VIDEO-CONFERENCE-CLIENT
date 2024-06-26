@@ -84,6 +84,10 @@ const App = {
   toggleVideo() {
     ApiRTCHelper.toggleVideo();
   },
+
+  download(files,path) {
+    StorageHelper.download(files,path);
+  },
 };
 
 document.addEventListener("alpine:init", () => {
